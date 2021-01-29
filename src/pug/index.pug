@@ -1,1 +1,14 @@
-h1 Pug
+include ../../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Агро Класс
+  body
+    include includes/header
+
+    h2 Pug
+
+    include includes/footer

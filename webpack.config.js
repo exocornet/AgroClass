@@ -77,7 +77,8 @@ module.exports = {
       template: './src/pug/index.pug'
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css"
+      // filename: "[name].css"
+      filename: "css/style.css"
     }),
     new CopyWebpackPlugin({
       patterns: [

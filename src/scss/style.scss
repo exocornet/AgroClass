@@ -1,0 +1,65 @@
+@import "normolize";
+
+/*Общие стили*/
+body {
+
+}
+
+.wrapper-width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/*-start HEADER*/
+/*--start Menu*/
+.menu-pages {
+  background: #1D1E22;
+
+  &__links {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 39px;
+  }
+
+  &__link {
+    margin-right: 100px;
+
+    &_floatleft {
+      margin-left: auto;
+    }
+
+    &_background {
+      background: #C63D3D;
+      padding: 10px 15px;
+
+      &:hover {
+        background: #FFFFFF;
+        cursor: pointer;
+
+        .menu-pages__link-item {
+          color: #00923F;
+        }
+      }
+    }
+  }
+
+  &__link-item {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: #00923F;
+    }
+  }
+}
+/*--end Menu*/
+
+.contacts {
+  background: #f7f9fa;
+}
+
+/*-end HEADER*/
