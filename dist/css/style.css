@@ -436,27 +436,20 @@ body {
 /*--start Contacts*/
 .contacts {
   background: #f7f9fa;
+  padding: 20px 0 10px;
 }
-.contacts__adres {
-  line-height: 24px;
-  margin: 0;
-}
-.contacts__email {
-  line-height: 24px;
-}
-.contacts__email_color {
+.contacts__section-heading {
   font-size: 13px;
   line-height: 19px;
   letter-spacing: 0.09em;
   color: #5E606A;
 }
-.contacts__email_link {
-  color: #272933;
-}
-.contacts__email_link:hover {
-  color: #00923F;
+.contacts_align-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
+/*---LOGO*/
 .logo {
   font-style: normal;
   font-weight: bold;
@@ -466,4 +459,41 @@ body {
   line-height: 60px;
 }
 
+/*---EMAIL ADRES*/
+.mail-adres {
+  line-height: 24px;
+  margin: 0;
+}
+.mail-adres__email {
+  line-height: 24px;
+}
+.mail-adres__email_link {
+  color: #272933;
+  text-decoration: none;
+}
+.mail-adres__email_link:hover {
+  color: #00923F;
+}
+
+/*---PHONE*/
+.phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.phone__code {
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+.phone__number {
+  font-size: 41px;
+  line-height: 60px;
+  color: #00923f;
+  font-weight: 800;
+  font-style: normal;
+  margin-left: 5px;
+}
+
+/*--end Contacts*/
 /*-end HEADER*/
