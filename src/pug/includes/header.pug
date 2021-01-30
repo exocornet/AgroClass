@@ -1,6 +1,7 @@
-<!-- start HEADER -->
+<!-- -start HEADER -->
 header.header
 
+  <!-- --start Menu -->
   nav.menu-pages
     ul.menu-pages__links.wrapper-width
       li.menu-pages__link
@@ -13,24 +14,40 @@ header.header
         a.menu-pages__link-item(href="#") Контакты
       li.menu-pages__link_floatleft.menu-pages__link_background
         a.menu-pages__link-item(href="#") Получить консультацию
+  <!-- --end Menu -->
 
+  <!-- --start Contacts -->
   div.contacts
     div.contacts_align-flex.wrapper-width
+      <!-- ---LOGO -->
       h2.logo Агро Класс
-
-      div.mail-adres
+      <!-- ---ADRES -->
+      div.adres
         b г. Новоалтайск
         br
         |ул. Октябрьская, 9а (3 этаж, ТК "Крокус")
-      div.mail-adres__email
+      <!-- ---EMAIL -->
+      div.email
         span.contacts__section-heading Пишите
         br
-        a.mail-adres__email_link(href="mailto:agro-klass22@yandex.ru") agro-klass22@yandex.ru
-
-      a.phone(href="tel:3853246777")
+        a.email_link(href="mailto:agro-klass22@yandex.ru") agro-klass22@yandex.ru
+      <!-- ---PHONE -->
+      a.phone(href="tel:83853246777")
         div.contacts_wrapper-phone
           span.contacts__section-heading Звоните
           br
           span.phone__code (38532)
         span.phone__number 46-777
+  <!-- --end Contacts -->
 
+  <!-- --start Menu education -->
+  nav.menu-educat
+    ul.menu-educat__links.wrapper-width
+      li
+        a.menu-educat__link-item(href="#") Обучение на спецтехнику
+      li
+        a.menu-educat__link-item(href="#") Дополнительное образование
+      li
+        a.menu-educat__link-item(href="#") Автошкола
+  <!-- --end Menu education -->
+<!-- -end HEADER -->

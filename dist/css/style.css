@@ -458,20 +458,25 @@ body {
   color: #00923F;
   line-height: 60px;
 }
+.logo_color-white {
+  color: #ffffff;
+}
 
-/*---EMAIL ADRES*/
-.mail-adres {
+/*---ADRES*/
+.adres {
   line-height: 24px;
   margin: 0;
 }
-.mail-adres__email {
+
+/*---EMAIL*/
+.email {
   line-height: 24px;
 }
-.mail-adres__email_link {
+.email_link {
   color: #272933;
   text-decoration: none;
 }
-.mail-adres__email_link:hover {
+.email_link:hover {
   color: #00923F;
 }
 
@@ -496,4 +501,41 @@ body {
 }
 
 /*--end Contacts*/
+/*--start Menu education*/
+.menu-educat {
+  padding: 10px 0;
+}
+.menu-educat__links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.menu-educat__link-item {
+  font-size: 21px;
+  line-height: 31px;
+  text-decoration: none;
+}
+.menu-educat__link-item:hover {
+  color: #00923F;
+}
+
+/*--end Menu education*/
 /*-end HEADER*/
+/*-start FOOTER*/
+.footer {
+  background: #2C2D33;
+  padding: 50px 0 70px;
+}
+.footer_align-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__adres {
+  color: #ffffff;
+  line-height: 24px;
+}
+.footer__city:last-child {
+  margin: 0;
+}
+/*-end FOOTER*/

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Агро Класс</title>
   <link href="css/style.css" rel="stylesheet"></head>
-  <body><!-- start HEADER -->
-    <header class="header">
+  <body><!-- -start HEADER -->
+    <header class="header"><!-- --start Menu -->
       <nav class="menu-pages">
         <ul class="menu-pages__links wrapper-width">
           <li class="menu-pages__link"><a class="menu-pages__link-item" href="#">О компании</a></li>
@@ -14,17 +15,39 @@
           <li class="menu-pages__link"><a class="menu-pages__link-item" href="#">Контакты</a></li>
           <li class="menu-pages__link_floatleft menu-pages__link_background"><a class="menu-pages__link-item" href="#">Получить консультацию</a></li>
         </ul>
-      </nav>
+      </nav><!-- --end Menu -->
+<!-- --start Contacts -->
       <div class="contacts">
-        <div class="contacts_align-flex wrapper-width">
-          <h2 class="logo">Агро Класс</h2>
-          <div class="mail-adres"><b>г. Новоалтайск</b><br>ул. Октябрьская, 9а (3 этаж, ТК "Крокус")</div>
-          <div class="mail-adres__email"><span class="contacts__section-heading">Пишите</span><br><a class="mail-adres__email_link" href="mailto:agro-klass22@yandex.ru">agro-klass22@yandex.ru</a></div><a class="phone" href="tel:3853246777">
+        <div class="contacts_align-flex wrapper-width"><!-- ---LOGO -->
+          <h2 class="logo">Агро Класс</h2><!-- ---ADRES -->
+          <div class="adres"><b>г. Новоалтайск</b><br>ул. Октябрьская, 9а (3 этаж, ТК "Крокус")</div><!-- ---EMAIL -->
+          <div class="email"><span class="contacts__section-heading">Пишите</span><br><a class="email_link" href="mailto:agro-klass22@yandex.ru">agro-klass22@yandex.ru</a></div><!-- ---PHONE --><a class="phone" href="tel:83853246777">
             <div class="contacts_wrapper-phone"><span class="contacts__section-heading">Звоните</span><br><span class="phone__code">(38532)</span></div><span class="phone__number">46-777</span></a>
         </div>
+      </div><!-- --end Contacts -->
+<!-- --start Menu education -->
+      <nav class="menu-educat">
+        <ul class="menu-educat__links wrapper-width">
+          <li><a class="menu-educat__link-item" href="#">Обучение на спецтехнику</a></li>
+          <li><a class="menu-educat__link-item" href="#">Дополнительное образование</a></li>
+          <li><a class="menu-educat__link-item" href="#">Автошкола</a></li>
+        </ul>
+      </nav><!-- --end Menu education -->
+    </header><!-- -end HEADER -->
+    <h2>Pug</h2><!-- -start FOOTER -->
+    <footer class="footer">
+      <div class="footer_align-flex wrapper-width">
+        <div class="footer__adres">
+          <h2 class="logo logo_color-white">Агро Класс</h2>
+          <p class="footer__city">г. Новоалтайск,<br>ул. Октябрьская, дом 9А, 3 этаж<br>ул. Гагарина, дом 7</p>
+          <p class="footer__city">г. Барнаул,<br>пр. Социалистический, д 109, офис 424</p>
+        </div>
+        <div class="footer__menu"></div>
+        <div class="footer__contacts">
+          <p><span>Телефон</span><a href="tel:83853246777">8 (38532) 46-777</a></p>
+          <p><span>E-mail</span><a href="mailto:agro-klass22@yandex.ru">agro-klass22@yandex.ru</a></p><a href="#">Политика конфиденциальности</a>
+        </div>
       </div>
-    </header>
-    <h2>Pug</h2>
-    <footer></footer>
+    </footer><!-- -end FOOTER -->
   <script src="main.js"></script></body>
 </html>

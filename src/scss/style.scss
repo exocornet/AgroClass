@@ -91,23 +91,28 @@ body {
   margin: 0;
   color: #00923F;
   line-height: 60px;
+
+  &_color-white {
+    color: #ffffff;
+  }
 }
 
-/*---EMAIL ADRES*/
-.mail-adres {
+/*---ADRES*/
+.adres {
   line-height: 24px;
   margin: 0;
+}
 
-  &__email {
-    line-height: 24px;
+/*---EMAIL*/
+.email {
+  line-height: 24px;
 
-    &_link {
-      color: #272933;
-      text-decoration: none;
+  &_link {
+    color: #272933;
+    text-decoration: none;
 
-      &:hover {
-        color: #00923F;
-      }
+    &:hover {
+      color: #00923F;
     }
   }
 }
@@ -135,5 +140,57 @@ body {
 }
 /*--end Contacts*/
 
+/*--start Menu education*/
+.menu-educat {
+  padding: 10px 0;
 
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link-item {
+    font-size: 21px;
+    line-height: 31px;
+    text-decoration: none;
+
+    &:hover {
+      color: #00923F;
+    }
+  }
+}
+/*--end Menu education*/
 /*-end HEADER*/
+
+/*-start FOOTER*/
+.footer {
+  background: #2C2D33;
+  padding: 50px 0 70px;
+
+  &_align-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__adres {
+    color: #ffffff;
+    line-height: 24px;
+  }
+
+  &__city {
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__menu {
+
+  }
+
+  &__contacts {
+
+  }
+}
+/*-end FOOTER*/
