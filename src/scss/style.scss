@@ -1,8 +1,12 @@
 @import "normolize";
+@import "circe";
 
 /*Общие стили*/
 body {
-
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .wrapper-width {
@@ -48,7 +52,6 @@ body {
 
   &__link-item {
     color: #FFFFFF;
-    font-size: 16px;
     text-decoration: none;
 
     &:hover {
@@ -58,8 +61,41 @@ body {
 }
 /*--end Menu*/
 
+/*--start Contacts*/
 .contacts {
   background: #f7f9fa;
+
+  &__adres {
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__email {
+    line-height: 24px;
+
+    &_color {
+      font-size: 13px;
+      line-height: 19px;
+      letter-spacing: 0.09em;
+      color: #5E606A;
+    }
+
+    &_link {
+      color: #272933;
+
+      &:hover {
+        color: #00923F;
+      }
+    }
+  }
 }
 
+.logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  margin: 0;
+  color: #00923F;
+  line-height: 60px;
+}
 /*-end HEADER*/
