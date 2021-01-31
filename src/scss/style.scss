@@ -91,6 +91,7 @@ body {
   margin: 0;
   color: #00923F;
   line-height: 60px;
+  text-decoration: none;
 
   &_color-white {
     color: #ffffff;
@@ -172,6 +173,7 @@ body {
   &_align-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__adres {
@@ -185,12 +187,51 @@ body {
     }
   }
 
-  &__menu {
-
-  }
-
   &__contacts {
 
+  }
+}
+
+/*---FOOTER MENU*/
+.footer-menu {
+  display: flex;
+  //align-items: center;
+
+  &__wrap-link {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &:first-child {
+      margin-right: 100px;
+    }
+
+    &:first-child .footer-menu__link {
+      margin-bottom: 26px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child .footer-menu__link {
+      margin-bottom: 47px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link-item {
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      color: #00923F;
+    }
   }
 }
 /*-end FOOTER*/
