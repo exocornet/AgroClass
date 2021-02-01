@@ -186,10 +186,6 @@ body {
       margin: 0;
     }
   }
-
-  &__contacts {
-
-  }
 }
 
 /*---FOOTER MENU*/
@@ -232,6 +228,39 @@ body {
     &:hover {
       color: #00923F;
     }
+  }
+}
+
+.footer-contacts {
+  color: #ffffff;
+
+  &__wrap-section {
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+
+  &__tel {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 37px;
+  }
+
+  &__email {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 25px;
+
+    &:hover {
+      color: #00923F;
+    }
+  }
+
+  &__priv-policy {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 /*-end FOOTER*/

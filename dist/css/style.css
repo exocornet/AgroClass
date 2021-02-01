@@ -540,6 +540,7 @@ body {
 .footer__city:last-child {
   margin: 0;
 }
+
 /*---FOOTER MENU*/
 .footer-menu {
   display: flex;
@@ -572,6 +573,34 @@ body {
 }
 .footer-menu__link-item:hover {
   color: #00923F;
+}
+
+.footer-contacts {
+  color: #ffffff;
+}
+.footer-contacts__wrap-section {
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+.footer-contacts__tel {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 37px;
+}
+.footer-contacts__email {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 25px;
+}
+.footer-contacts__email:hover {
+  color: #00923F;
+}
+.footer-contacts__priv-policy {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 /*-end FOOTER*/
