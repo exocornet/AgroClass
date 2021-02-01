@@ -389,6 +389,10 @@ body {
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapper-width {
   max-width: 1280px;
   margin: 0 auto;
@@ -400,9 +404,7 @@ body {
   font-size: 30px;
   line-height: 48px;
   text-transform: uppercase;
-}
-.title-block_mt135 {
-  margin-top: 135px;
+  margin-top: 0;
 }
 
 .button {
@@ -581,6 +583,9 @@ body {
 
 /*--end Banner*/
 /*--start Training areas*/
+.training-areas {
+  margin-top: 135px;
+}
 .training-areas__categories {
   display: flex;
   justify-content: space-between;
@@ -610,6 +615,9 @@ body {
 
 /*--end Training areas*/
 /*--start Block categories*/
+.block-categories {
+  margin-top: 135px;
+}
 .block-categories__wrap {
   display: flex;
   justify-content: space-between;
@@ -643,6 +651,40 @@ body {
 }
 
 /*--end Block categories*/
+/*--start Block description*/
+.block-description {
+  margin-top: 170px;
+}
+.block-description__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.block-description__item {
+  width: 46%;
+}
+.block-description__desc {
+  font-size: 18px;
+  line-height: 28px;
+  color: #22262F;
+  margin: 0;
+}
+.block-description__desc_marg-bottom {
+  margin-bottom: 105px;
+}
+.block-description__img {
+  width: 100%;
+}
+.block-description__img_marg-bottom {
+  margin-bottom: 80px;
+}
+
+/*--end Block description*/
+/*--start Our partners*/
+.our-partners {
+  margin-top: 160px;
+}
+
+/*--end Our partners*/
 /*-end MAIN*/
 /*-start FOOTER*/
 .footer {

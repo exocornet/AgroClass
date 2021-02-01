@@ -9,6 +9,10 @@ body {
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapper-width {
   max-width: 1280px;
   margin: 0 auto;
@@ -20,10 +24,7 @@ body {
   font-size: 30px;
   line-height: 48px;
   text-transform: uppercase;
-
-  &_mt135 {
-    margin-top: 135px;
-  }
+  margin-top: 0;
 }
 
 .button {
@@ -228,6 +229,7 @@ body {
 
 /*--start Training areas*/
 .training-areas {
+  margin-top: 135px;
 
   &__categories {
     display: flex;
@@ -265,6 +267,7 @@ body {
 
 /*--start Block categories*/
 .block-categories {
+  margin-top: 135px;
 
   &__wrap {
     display: flex;
@@ -305,6 +308,45 @@ body {
 }
 /*--end Block categories*/
 
+/*--start Block description*/
+.block-description {
+  margin-top: 170px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 46%;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 28px;
+    color: #22262F;
+    margin: 0;
+
+    &_marg-bottom {
+      margin-bottom: 105px;
+    }
+  }
+
+  &__img{
+    width: 100%;
+
+    &_marg-bottom {
+      margin-bottom: 80px;
+    }
+  }
+}
+/*--end Block description*/
+
+/*--start Our partners*/
+.our-partners {
+  margin-top: 160px;
+}
+/*--end Our partners*/
 /*-end MAIN*/
 
 
