@@ -14,6 +14,42 @@ body {
   margin: 0 auto;
 }
 
+.title-block {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  &_mt135 {
+    margin-top: 135px;
+  }
+}
+
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #00923F;
+  border-radius: 6px;
+  padding: 25px 32px;
+  border: 1px solid #C5C5C5;
+  outline: none;
+  cursor: pointer;
+
+  &_marg-banner {
+    margin-top: 60px;
+  }
+
+  &:hover {
+    filter: brightness(90%)
+  }
+}
+
 /*-start HEADER*/
 /*--start Menu*/
 .menu-pages {
@@ -166,6 +202,111 @@ body {
 }
 /*--end Menu education*/
 /*-end HEADER*/
+
+/*-start MAIN*/
+.main {
+  background: #E5E5E5;
+}
+
+/*--start Banner*/
+.banner {
+  background: url("../img/home/bg-banner.jpg");
+  background-size: cover;
+  padding: 185px 0 230px;
+
+  &__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: pre-wrap;
+  }
+}
+/*--end Banner*/
+
+/*--start Training areas*/
+.training-areas {
+
+  &__categories {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      width: 22%;
+    }
+  }
+
+  &__link {
+    line-height: 21px;
+    color: #1F1F25;
+    text-decoration: none;
+
+    &:hover {
+      color: #00923F;
+    }
+  }
+
+  &__link-fullcategories {
+    display: block;
+    font-size: 18px;
+    line-height: 37px;
+    color: #206534;
+    text-decoration: none;
+    margin-top: 40px;
+
+    &:hover {
+      color: #00923F;
+    }
+  }
+}
+/*--end Training areas*/
+
+/*--start Block categories*/
+.block-categories {
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 50px 45px;
+  }
+
+  &__item {
+    width: 27%;
+    margin-bottom: 45px;
+
+    &:nth-child(n+7) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(3n) {
+      width: 36%;
+    }
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    color: #324556;
+    margin-top: 0;
+  }
+
+  &__descript {
+    line-height: 22px;
+    color: #646871;
+  }
+}
+/*--end Block categories*/
+
+/*-end MAIN*/
+
 
 /*-start FOOTER*/
 .footer {
