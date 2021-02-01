@@ -43,19 +43,19 @@ body {
         background: #FFFFFF;
         cursor: pointer;
 
-        .menu-pages__link-item {
+        a {
           color: #00923F;
         }
       }
     }
-  }
 
-  &__link-item {
-    color: #FFFFFF;
-    text-decoration: none;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
 
-    &:hover {
-      color: #00923F;
+      &:hover {
+        color: #00923F;
+      }
     }
   }
 }
