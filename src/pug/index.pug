@@ -14,7 +14,7 @@ html(lang="ru")
     main.main#content
       <!-- --start Banner -->
       div.banner
-        div.wrapper-width
+        div.banner_wrap.wrapper-width
           h1.banner__heading
             |Профессиональная
             br
@@ -35,16 +35,16 @@ html(lang="ru")
 
         div.training-areas__categories
           div.training-areas__categories-item
-            img(src="/img/home/training-areas1.png")
+            img.training-areas__img(src="/img/home/training-areas1.png")
             a.training-areas__link(href="#") Водитель погрузчика категорий «В»,«С»,«D», штабелера, ричтрака.
           div.training-areas__categories-item
-            img(src="/img/home/training-areas2.png")
+            img.training-areas__img(src="/img/home/training-areas2.png")
             a.training-areas__link(href="#") Машинист экскаватора, бульдозера категорий «С» «D» «Е» (трудоустройтво).
           div.training-areas__categories-item
-            img(src="/img/home/training-areas3.png")
+            img.training-areas__img(src="/img/home/training-areas3.png")
             a.training-areas__link(href="#") Тракторист категорий «В» «С» «D» «Е».
           div.training-areas__categories-item
-            img(src="/img/home/training-areas4.png")
+            img.training-areas__img(src="/img/home/training-areas4.png")
             a.training-areas__link(href="#") Водитель внедорожных мототранспортных средств категория А1 и водитель внедорожных автотранспортных средств категории А2,А3.
 
         a.training-areas__link-fullcategories(href="#") Смотреть все направления
@@ -84,7 +84,7 @@ html(lang="ru")
             h3.block-categories__heading Категория "F"
             p.block-categories__descript самоходные сельскохозяйственные машины
           div.block-categories__item
-            button.button узнать о ближайших курсах
+            button.button.button_fontsize-categori узнать о ближайших курсах
       <!-- --end Block categories -->
 
       <!-- --start Block description -->
@@ -97,7 +97,7 @@ html(lang="ru")
             img.block-description__img(src="/img/home/block-descript1.jpg")
           div.block-description__item
             img.block-description__img.block-description__img_marg-bottom(src="/img/home/block-descript2.jpg")
-            h2.title-block ГАРАНТИИ ТРУДОУСТРОЙСТВА
+            h2.title-block.title-block_display-none ГАРАНТИИ ТРУДОУСТРОЙСТВА
             p.block-description__desc Сотрудничают по рабочим местам: колхозниками, центром занятости, строительные организации, кемеровским разрезом. То есть компания дает рекомендации (помощь в трудоустройстве) для людей прошедших обучение.
 
       <!-- --end Block description -->
@@ -105,7 +105,8 @@ html(lang="ru")
       <!-- --start Our partners -->
       article.our-partners.wrapper-width
         h2.title-block Наши партнеры
-        img.our-partners__img(src="/img/home/our-partners.png")
+        div.our-partners_overflow
+          img.our-partners__img(src="/img/home/our-partners.png")
       <!-- --end Our partners -->
 
       include includes/feedback-form
