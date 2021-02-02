@@ -1,5 +1,6 @@
 @import "normolize";
 @import "circe";
+@import "menu-gamburger";
 
 /*Общие стили*/
 body {
@@ -85,6 +86,7 @@ img {
 .menu-pages {
   background: #1D1E22;
   display: flex;
+  align-items: center;
 
   &__links {
     margin: 0 auto;
@@ -139,6 +141,10 @@ img {
   }
 }
 /*--end Menu*/
+
+.menu-hamburger {
+  margin-left: 10px;
+}
 
 /*--start Contacts*/
 .contacts {
