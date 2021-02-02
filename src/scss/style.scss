@@ -46,6 +46,10 @@ img {
     margin-top: 60px;
   }
 
+  &_marg-feedform {
+    margin-top: 45px;
+  }
+
   &:hover {
     filter: brightness(90%)
   }
@@ -345,8 +349,58 @@ img {
 /*--start Our partners*/
 .our-partners {
   margin-top: 160px;
+
+  &__img {
+    width: 100%;
+  }
 }
 /*--end Our partners*/
+
+/*--start Feedback form*/
+.feedback-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &_background {
+    background: url("../img/feedback-form-bg.jpg") no-repeat;
+    background-size: cover;
+    height: 570px;
+  }
+
+  &_width {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__forma {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+  }
+
+  &__input {
+    padding: 18px 45px 18px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 23px;
+    line-height: 38px;
+    color: #000000;
+
+    &::placeholder {
+      font-size: 23px;
+      line-height: 38px;
+      color: #000000;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+/*--end Feedback form*/
 /*-end MAIN*/
 
 

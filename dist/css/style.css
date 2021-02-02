@@ -425,6 +425,9 @@ img {
 .button_marg-banner {
   margin-top: 60px;
 }
+.button_marg-feedform {
+  margin-top: 45px;
+}
 .button:hover {
   filter: brightness(90%);
 }
@@ -683,8 +686,51 @@ img {
 .our-partners {
   margin-top: 160px;
 }
+.our-partners__img {
+  width: 100%;
+}
 
 /*--end Our partners*/
+/*--start Feedback form*/
+.feedback-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.feedback-form_background {
+  background: url("../img/feedback-form-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 570px;
+}
+.feedback-form_width {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.feedback-form__forma {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+}
+.feedback-form__input {
+  padding: 18px 45px 18px;
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 23px;
+  line-height: 38px;
+  color: #000000;
+}
+.feedback-form__input::placeholder {
+  font-size: 23px;
+  line-height: 38px;
+  color: #000000;
+}
+.feedback-form__input:focus {
+  outline: none;
+}
+
+/*--end Feedback form*/
 /*-end MAIN*/
 /*-start FOOTER*/
 .footer {

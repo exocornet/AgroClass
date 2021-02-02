@@ -11,7 +11,7 @@ html(lang="ru")
     include includes/header
 
     <!-- -start MAIN -->
-    main.main
+    main.main#content
       <!-- --start Banner -->
       div.banner
         div.wrapper-width
@@ -105,8 +105,10 @@ html(lang="ru")
       <!-- --start Our partners -->
       article.our-partners.wrapper-width
         h2.title-block Наши партнеры
-        img(src="/img/home/our-partners.png")
+        img.our-partners__img(src="/img/home/our-partners.png")
       <!-- --end Our partners -->
+
+      include includes/feedback-form
     <!-- -end MAIN -->
 
     include includes/footer
