@@ -65,24 +65,45 @@
 }
 //<---END кнопка меню (гамбургер)
 
-.menu-pages {
+//START выпадающая часть меню (гамбургер)--->
+.block-click-hamburger {
+  display: none;
 
-  &__click-hamburger{
-    display: none;
+  &_active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #1D1E22;
+    border: none;
+    position: absolute;
+    top: 95px;
+    padding: 50px 0 110px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &_wrap {
+    max-width: 375px;
+    margin: 0 auto;
     list-style: none;
+    padding: 0;
+  }
 
-    &_active {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      height: 100%;
-      background: #1D1E22;
-      border: none;
-      position: absolute;
-      top: 95px;
-      padding: 20px 16px;
-      box-sizing: border-box;
-      width: 100%;
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+
+    &_margin {
+      margin-bottom: 42px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+
+    &:hover {
+      color: #00923F;
+    }
+
   }
 }
