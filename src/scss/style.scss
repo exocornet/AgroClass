@@ -151,6 +151,18 @@ img {
   background: #f7f9fa;
   padding: 20px 0 10px;
 
+  &_active {
+    background: #1D1E22;
+
+    a {
+      color: #ffffff!important;
+
+      span {
+        color: #ffffff!important;
+      }
+    }
+  }
+
   &__section-heading {
     font-size: 13px;
     line-height: 19px;

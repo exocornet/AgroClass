@@ -1,60 +1,88 @@
 //START кнопка меню (гамбургер) --->
 .menu-hamburger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 28px;
+  display: none;
+}
 
-  &__icon {
-    position: relative;
-    width: 28px;
-    height: 5px;
-    background: #ffffff;
-    border: 0;
+@media only screen and (max-width : 768px) {
+  .menu-hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
 
-    &:focus {
-      outline: 0;
-    }
-
-    &:before {
-      position: absolute;
-      left: 0;
-      top: -10px;
-      content: "";
-      display: block;
+    &__icon {
+      position: relative;
       width: 28px;
       height: 5px;
       background: #ffffff;
-      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      border: 0;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        content: "";
+        display: block;
+        width: 28px;
+        height: 5px;
+        background: #ffffff;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      }
+
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: "";
+        display: block;
+        width: 28px;
+        height: 5px;
+        background: #ffffff;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      }
+    }
+  }
+
+  .menu-hamburger__icon.menu-hamburger__icon_active {
+    background: transparent;
+
+    &:before {
+      transform: rotate(45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     }
 
     &:after {
-      position: absolute;
-      left: 0;
-      top: 10px;
-      content: "";
-      display: block;
-      width: 28px;
-      height: 5px;
-      background: #ffffff;
-      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      transform: rotate(-45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     }
   }
 }
+//<---END кнопка меню (гамбургер)
 
-.menu-hamburger__icon.menu-hamburger__icon_active {
-  background: transparent;
+.menu-pages {
 
-  &:before {
-    transform: rotate(45deg);
-    top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  }
+  &__click-hamburger{
+    display: none;
+    list-style: none;
 
-  &:after {
-    transform: rotate(-45deg);
-    top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    &_active {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      background: #1D1E22;
+      border: none;
+      position: absolute;
+      top: 95px;
+      padding: 20px 16px;
+      box-sizing: border-box;
+      width: 100%;
+    }
   }
 }
-//<---END кнопка меню (гамбургер)
