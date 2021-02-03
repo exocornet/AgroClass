@@ -1,6 +1,7 @@
 @import "normolize";
 @import "circe";
 @import "menu-gamburger";
+@import "modal-form-feedback";
 
 /*Общие стили*/
 body {
@@ -118,6 +119,7 @@ img {
   &__button {
     border: none;
     color: #ffffff;
+    text-decoration: none;
 
     &_floatleft {
       margin-left: auto;
