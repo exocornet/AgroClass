@@ -1,0 +1,67 @@
+.bread-crumbs {
+  height: 345px;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+
+  @media only screen and (max-width : 768px) {
+    height: 225px;
+  }
+
+  &_wrap {
+    width: 100%;
+  }
+
+  &_background-driving-school {
+    background: url("../img/driving-school-bg-bc.jpg");
+  }
+  &_background-training-specequipment {
+    background: url("../img/training-specequipment-bg-bc.jpg");
+  }
+  &_background-extra-education {
+    background: url("../img/extra-education-bg-bc.jpg");
+  }
+  &_background-about-company {
+    background: url("../img/about-company-bg-bc.jpg");
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &:hover {
+      color: #00923F;
+    }
+
+    &_active {
+      text-decoration: underline;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+
+  &__link-delimiter {
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+
+  &__title-page {
+    font-size: 32px;
+    line-height: 51px;
+    text-transform: uppercase;
+
+    @media only screen and (max-width : 768px) {
+      font-size: 26px;
+      line-height: 42px;
+    }
+  }
+}
