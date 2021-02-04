@@ -15,9 +15,33 @@ html(lang="ru")
     main
       include includes/bread-crumbs
 
+      div.training-areas_wrap-color
+        <!-- --start Training areas -->
+        article.training-areas.wrapper-width
+          h2.title-block
+            | Мы осуществляем
+            br
+            | обучение по следующим направлениям
 
+          div.training-areas__categories
+            div.training-areas__categories-item
+              img.training-areas__img(src="/img/driving-school/driving-school-ta1.png")
+              a.training-areas__link(href="#") Категория А
+            div.training-areas__categories-item
+              img.training-areas__img(src="/img/driving-school/driving-school-ta2.png")
+              a.training-areas__link(href="#") Категория В
+            div.training-areas__categories-item
+              img.training-areas__img(src="/img/driving-school/driving-school-ta3.png")
+              a.training-areas__link(href="#") Категория С
+            div.training-areas__categories-item
+              img.training-areas__img(src="/img/driving-school/driving-school-ta4.png")
+              a.training-areas__link(href="#") Категория D
+            div.training-areas__categories-item
+              img.training-areas__img(src="/img/driving-school/driving-school-ta5.png")
+              a.training-areas__link(href="#") Категория E
+        <!-- --end Training areas -->
 
-
+      include includes/feedback-form
     <!-- -end MAIN -->
 
     include includes/footer
