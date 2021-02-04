@@ -1,8 +1,13 @@
 div#openModal.modal
   div.modal__dialog
     div.modal__content
-      div.modal__header
-        h3.modal__title Получить консультацию
-        a.close(href="#close" title="Close") ×
+      h3.title-block Получить консультацию
+      a.close(href="#close" title="Close") ×
 
-      div.modal__body Содержимое модального окна...
+
+      form.feedback-form__forma.modal__body(action="")
+        input.feedback-form__input(type="text" placeholder="Ваше имя")
+        input.feedback-form__input(type="tel" placeholder="Ваш телефон")
+        input.feedback-form__input(type="text" placeholder="Выберите направление")
+        button.button Отправить
+        //.modal__title
