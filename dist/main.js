@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n\n\n//# sourceURL=webpack://rr/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n\r\n\r\ndocument.querySelector('.menu-hamburger').onclick = function () {\r\n  document.querySelector('.menu-hamburger__icon').classList.toggle('menu-hamburger__icon_active');\r\n  document.querySelector('.block-click-hamburger').classList.toggle('block-click-hamburger_active');\r\n  document.querySelector('.contacts').classList.toggle('contacts_active');\r\n}\r\n\r\n// document.querySelector('.modal').onclick = function () {\r\n//\r\n// }\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';\r\n  console.log(scrollbar);\r\n  document.querySelector('[href=\"#openModal\"]').addEventListener('click', function () {\r\n    document.body.style.overflow = 'hidden';\r\n    document.querySelector('#openModal').style.marginLeft = scrollbar;\r\n  });\r\n  document.querySelector('[href=\"#close\"]').addEventListener('click', function () {\r\n    document.body.style.overflow = 'visible';\r\n    document.querySelector('#openModal').style.marginLeft = '0px';\r\n  });\r\n});\n\n//# sourceURL=webpack://rr/./src/main.js?");
 
 /***/ })
 

@@ -13,8 +13,21 @@
           <li class="menu-pages__link"><a class="menu-pages__link-item" href="#">Акции</a></li>
           <li class="menu-pages__link"><a class="menu-pages__link-item" href="#">Новости</a></li>
           <li class="menu-pages__link"><a class="menu-pages__link-item" href="#">Контакты</a></li>
-        </ul>
-        <button class="menu-pages__button menu-pages__button_floatleft menu-pages__button_background">Получить консультацию</button>
+        </ul><!-- --start Menu hamburger -->
+        <div class="menu-hamburger">
+          <button class="menu-hamburger__icon"></button>
+        </div>
+        <div class="block-click-hamburger">
+          <ul class="block-click-hamburger_wrap">
+            <li class="block-click-hamburger__link_margin"><a class="block-click-hamburger__link" href="#">О компании</a></li>
+            <li class="block-click-hamburger__link_margin"><a class="block-click-hamburger__link" href="#">Акции</a></li>
+            <li class="block-click-hamburger__link_margin"><a class="block-click-hamburger__link" href="#">Новости</a></li>
+            <li class="block-click-hamburger__link_margin"><a class="block-click-hamburger__link" href="#">Контакты</a></li>
+            <li class="block-click-hamburger__link_margin"><a class="block-click-hamburger__link" href="#">Обучение на спецтехнику</a></li>
+            <li class="block-click-hamburger__link_margin"><a class="block-click-hamburger__link" href="#">Дополнительное образование</a></li>
+            <li class="block-click-hamburger__link_margin"><a class="block-click-hamburger__link" href="#">Автошкола</a></li>
+          </ul>
+        </div><!-- --end Menu hamburger --><a class="menu-pages__button menu-pages__button_floatleft menu-pages__button_background" href="#openModal">Получить консультацию</a>
       </nav><!-- --end Menu -->
 <!-- --start Contacts -->
       <div class="contacts">
@@ -37,7 +50,7 @@
       <div class="banner">
         <div class="banner_wrap wrapper-width">
           <h1 class="banner__heading">Профессиональная<br>подготовка и переподготовка<br>трактористов-машинистов<br>Квалификации рабочих профессий</h1>
-          <button class="button button_marg-banner">Получить консультацию</button>
+          <button class="button button_marg-banner" onclick="document.location='#openModal'">Получить консультацию</button>
         </div>
       </div><!-- --end Banner -->
 <!-- --start Training areas -->
@@ -148,5 +161,19 @@
         </div>
       </div>
     </footer><!-- -end FOOTER -->
+    <div class="modal" id="openModal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <h3 class="title-block">Получить консультацию</h3><a class="close" href="#close" title="Close">×</a>
+          <form class="feedback-form__forma modal__body" action="">
+            <input class="feedback-form__input" type="text" placeholder="Ваше имя">
+            <input class="feedback-form__input" type="tel" placeholder="Ваш телефон">
+            <input class="feedback-form__input" type="text" placeholder="Выберите направление">
+            <button class="button">Отправить</button>
+            <!--.modal__title-->
+          </form>
+        </div>
+      </div>
+    </div>
   <script src="main.js"></script></body>
 </html>

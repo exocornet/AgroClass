@@ -381,6 +381,191 @@ template {
   font-weight: 800;
   font-style: normal;
 }
+.menu-hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+  }
+  .menu-hamburger__icon {
+    position: relative;
+    width: 28px;
+    height: 5px;
+    background: #ffffff;
+    border: 0;
+  }
+  .menu-hamburger__icon:focus {
+    outline: 0;
+  }
+  .menu-hamburger__icon:before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 5px;
+    background: #ffffff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .menu-hamburger__icon:after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 5px;
+    background: #ffffff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  .menu-hamburger__icon.menu-hamburger__icon_active {
+    background: transparent;
+  }
+  .menu-hamburger__icon.menu-hamburger__icon_active:before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  .menu-hamburger__icon.menu-hamburger__icon_active:after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+}
+.block-click-hamburger {
+  display: none;
+}
+.block-click-hamburger_active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #1D1E22;
+  border: none;
+  position: absolute;
+  top: 95px;
+  padding: 50px 0 110px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.block-click-hamburger_wrap {
+  max-width: 375px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+.block-click-hamburger__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.block-click-hamburger__link_margin {
+  margin-bottom: 42px;
+}
+.block-click-hamburger__link_margin:last-child {
+  margin-bottom: 0;
+}
+.block-click-hamburger__link:hover {
+  color: #00923F;
+}
+
+.modal {
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* цвет фона */
+  z-index: 1050;
+  opacity: 0;
+  /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  /* анимация перехода */
+  pointer-events: none;
+  /* элемент невидим для событий мыши */
+  /* ширина модального окна и его отступы от экрана */
+  /* свойства для блока, содержащего контент модального окна */
+  /* свойства для заголовка модального окна */
+  /* свойства для блока, содержащего основное содержимое окна */
+}
+.modal__dialog {
+  position: relative;
+  margin: 10px auto;
+}
+.modal__content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+  padding: 125px 140px;
+  width: max-content;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .modal__content {
+    padding: 5px 5px;
+  }
+}
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.modal__body {
+  position: relative;
+  overflow: auto;
+}
+
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .close {
+    top: 7px;
+    right: 14px;
+  }
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
 /*Общие стили*/
 body {
   font-family: "Circe";
@@ -462,6 +647,7 @@ img {
 .menu-pages {
   background: #1D1E22;
   display: flex;
+  align-items: center;
 }
 .menu-pages__links {
   margin: 0 auto;
@@ -490,6 +676,7 @@ img {
 .menu-pages__button {
   border: none;
   color: #ffffff;
+  text-decoration: none;
 }
 .menu-pages__button_floatleft {
   margin-left: auto;
@@ -509,10 +696,23 @@ img {
 }
 
 /*--end Menu*/
+.menu-hamburger {
+  margin-left: 10px;
+}
+
 /*--start Contacts*/
 .contacts {
   background: #f7f9fa;
   padding: 20px 0 10px;
+}
+.contacts_active {
+  background: #1D1E22;
+}
+.contacts_active a {
+  color: #ffffff !important;
+}
+.contacts_active a span {
+  color: #ffffff !important;
 }
 .contacts__section-heading {
   font-size: 13px;
