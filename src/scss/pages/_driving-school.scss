@@ -1,0 +1,21 @@
+.advantages {
+  display: flex;
+  align-items: center;
+  margin-top: 75px!important;
+  background: #F7F9FA;
+  padding: 60px 45px;
+
+  &__descript {
+    margin-right: 45px;
+  }
+
+  &__descript-item {
+    line-height: 26px;
+    margin-bottom: 55px;
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+include ../../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+- var titlePage = 'Обучение на спецтехнику';
+- var nameBreadCrumbs = 'Обучение на спецтехнику';
+- var bgBreadCrumbs = 'background-training-specequipment';
+
+doctype html
+html(lang="ru")
+  include includes/head
+  body
+    include includes/header
+
+    <!-- -start MAIN -->
+    main
+      include includes/bread-crumbs
+
+
+      include includes/feedback-form
+    <!-- -end MAIN -->
+
+    include includes/footer
+    include includes/modal-form-feedback

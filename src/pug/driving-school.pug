@@ -1,13 +1,12 @@
 include ../../node_modules/bempug/index
 - BEMPUG.modifier = '_';
-- var page = "Автошкола";
+- var titlePage = 'Автошкола';
+- var nameBreadCrumbs = "Автошкола";
+- var bgBreadCrumbs = "background-driving-school";
 
 doctype html
 html(lang="ru")
-  head
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(charset="utf-8")
-    title Агро Класс
+  include includes/head
   body
     include includes/header
 
@@ -26,20 +25,29 @@ html(lang="ru")
           div.training-areas__categories
             div.training-areas__categories-item
               img.training-areas__img(src="/img/driving-school/driving-school-ta1.png")
-              a.training-areas__link(href="#") Категория А
+              a.training-areas__link(href="category-card.html") Категория А
             div.training-areas__categories-item
               img.training-areas__img(src="/img/driving-school/driving-school-ta2.png")
-              a.training-areas__link(href="#") Категория В
+              a.training-areas__link(href="category-card.html") Категория В
             div.training-areas__categories-item
               img.training-areas__img(src="/img/driving-school/driving-school-ta3.png")
-              a.training-areas__link(href="#") Категория С
+              a.training-areas__link(href="category-card.html") Категория С
             div.training-areas__categories-item
               img.training-areas__img(src="/img/driving-school/driving-school-ta4.png")
-              a.training-areas__link(href="#") Категория D
+              a.training-areas__link(href="category-card.html") Категория D
             div.training-areas__categories-item
               img.training-areas__img(src="/img/driving-school/driving-school-ta5.png")
-              a.training-areas__link(href="#") Категория E
+              a.training-areas__link(href="category-card.html") Категория E
         <!-- --end Training areas -->
+
+      div.advantages.wrapper-width
+        div.advantages__descript
+          p.advantages__descript-item Теоретическая часть обучения производится  в классах, оборудованных специальным образом. Практика осуществляется на полигоне с использованием современной спецтехники.
+          p.advantages__descript-item Итоговые экзамены по результатам курсов  проводятся на базе   учебной организации Агро-Класс. Экзамен принимает главный государственный инженер-инспектор Гостехнадзора г.Новоалтайска.
+          p.advantages__descript-item По результатам экзаменов выдается свидетельство установленного образца, дающее право на получение в органах Гостехнадзора удостоверения машиниста-тракториста.
+
+        img(src="/img/driving-school/advantages-img.jpg")
+
 
       include includes/feedback-form
     <!-- -end MAIN -->

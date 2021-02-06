@@ -80,6 +80,38 @@ module.exports = {
       filename: "driving-school.html",
       template: './src/pug/driving-school.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: "training-specequipment.html",
+      template: './src/pug/training-specequipment.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "extra-education.html",
+      template: './src/pug/extra-education.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "about-company.html",
+      template: './src/pug/about-company.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "category-card.html",
+      template: './src/pug/category-card.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "shares.html",
+      template: './src/pug/shares.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "news.html",
+      template: './src/pug/news.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "card-news.html",
+      template: './src/pug/card-news.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contacts.html",
+      template: './src/pug/contacts.pug'
+    }),
     new MiniCssExtractPlugin({
       // filename: "[name].css"
       filename: "css/style.css"

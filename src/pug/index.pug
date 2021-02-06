@@ -1,12 +1,10 @@
 include ../../node_modules/bempug/index
 - BEMPUG.modifier = '_';
+- var titlePage = 'Главная';
 
 doctype html
 html(lang="ru")
-  head
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(charset="utf-8")
-    title Агро Класс
+  include includes/head
   body
     include includes/header
 
@@ -36,16 +34,16 @@ html(lang="ru")
         div.training-areas__categories
           div.training-areas__categories-item
             img.training-areas__img(src="/img/home/training-areas1.png")
-            a.training-areas__link(href="#") Водитель погрузчика категорий «В»,«С»,«D», штабелера, ричтрака.
+            a.training-areas__link(href="category-card.html") Водитель погрузчика категорий «В»,«С»,«D», штабелера, ричтрака.
           div.training-areas__categories-item
             img.training-areas__img(src="/img/home/training-areas2.png")
-            a.training-areas__link(href="#") Машинист экскаватора, бульдозера категорий «С» «D» «Е» (трудоустройтво).
+            a.training-areas__link(href="category-card.html") Машинист экскаватора, бульдозера категорий «С» «D» «Е» (трудоустройтво).
           div.training-areas__categories-item
             img.training-areas__img(src="/img/home/training-areas3.png")
-            a.training-areas__link(href="#") Тракторист категорий «В» «С» «D» «Е».
+            a.training-areas__link(href="category-card.html") Тракторист категорий «В» «С» «D» «Е».
           div.training-areas__categories-item
             img.training-areas__img(src="/img/home/training-areas4.png")
-            a.training-areas__link(href="#") Водитель внедорожных мототранспортных средств категория А1 и водитель внедорожных автотранспортных средств категории А2,А3.
+            a.training-areas__link(href="category-card.html") Водитель внедорожных мототранспортных средств категория А1 и водитель внедорожных автотранспортных средств категории А2,А3.
 
         a.training-areas__link-fullcategories(href="#") Смотреть все направления
           img(src="/img/home/link-fulltraining-areas.png")

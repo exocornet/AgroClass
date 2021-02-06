@@ -1,8 +1,8 @@
 // --start Bread crumbs
-div.bread-crumbs.bread-crumbs_background-driving-school
+div.bread-crumbs(class=`bread-crumbs_${bgBreadCrumbs}`)
   div.wrapper-width.bread-crumbs_wrap
     a.bread-crumbs__link(href="index.html") Главная
     span.bread-crumbs__link-delimiter  /
-    a.bread-crumbs__link.bread-crumbs__link_active #{page}
-    h1.bread-crumbs__title-page #{page}
+    a.bread-crumbs__link.bread-crumbs__link_active #{nameBreadCrumbs}
+    h1.bread-crumbs__title-page #{nameBreadCrumbs}
 // --end Bread crumbs

@@ -629,6 +629,25 @@ template {
   opacity: 0.75;
 }
 
+.advantages {
+  display: flex;
+  align-items: center;
+  margin-top: 75px !important;
+  background: #F7F9FA;
+  padding: 60px 45px;
+}
+.advantages__descript {
+  margin-right: 45px;
+}
+.advantages__descript-item {
+  line-height: 26px;
+  margin-bottom: 55px;
+  margin-top: 0;
+}
+.advantages__descript-item:last-child {
+  margin-bottom: 0;
+}
+
 /*Общие стили*/
 body {
   font-family: "Circe";
