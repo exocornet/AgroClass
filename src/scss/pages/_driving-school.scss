@@ -5,8 +5,17 @@
   background: #F7F9FA;
   padding: 60px 45px;
 
+  @media only screen and (max-width : 768px) {
+    background: #ffffff;
+    padding: 0;
+  }
+
   &__descript {
     margin-right: 45px;
+
+    @media only screen and (max-width : 768px) {
+      margin-right: 0;
+    }
   }
 
   &__descript-item {
@@ -14,8 +23,19 @@
     margin-bottom: 55px;
     margin-top: 0;
 
+    @media only screen and (max-width : 768px) {
+      font-size: 14px;
+      line-height: 23px;
+    }
+
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    @media only screen and (max-width : 768px) {
+      display: none;
     }
   }
 }

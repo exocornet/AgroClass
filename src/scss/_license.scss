@@ -1,0 +1,28 @@
+.license {
+
+
+  &_wrap-bg {
+    background: #E5E5E5;
+    padding: 110px 0 110px;
+  }
+
+  &__wrap-img {
+    @media only screen and (max-width : 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 25%;
+
+    @media only screen and (max-width : 768px) {
+      width: 100%;
+      margin-bottom: 100px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

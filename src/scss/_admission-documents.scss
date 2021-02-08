@@ -1,0 +1,29 @@
+.admission-documents {
+  margin-top: 85px!important;
+  margin-bottom: 70px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 28px;
+    line-height: 46px;
+
+    @media only screen and (max-width : 768px) {
+      font-size: 20px;
+      line-height: 33px;
+    }
+  }
+
+  &__list {
+    line-height: 29px;
+    padding-left: 20px;
+    max-width: 55%;
+    color: #2F2828;
+
+    @media only screen and (max-width : 768px) {
+      font-size: 14px;
+      line-height: 26px;
+      max-width: 100%;
+    }
+  }
+}

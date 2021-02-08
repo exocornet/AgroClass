@@ -11,7 +11,7 @@ html(lang="ru")
     include includes/header
 
     <!-- -start MAIN -->
-    main
+    main#content
       include includes/bread-crumbs
 
       div.training-areas_wrap-color
@@ -46,9 +46,10 @@ html(lang="ru")
           p.advantages__descript-item Итоговые экзамены по результатам курсов  проводятся на базе   учебной организации Агро-Класс. Экзамен принимает главный государственный инженер-инспектор Гостехнадзора г.Новоалтайска.
           p.advantages__descript-item По результатам экзаменов выдается свидетельство установленного образца, дающее право на получение в органах Гостехнадзора удостоверения машиниста-тракториста.
 
-        img(src="/img/driving-school/advantages-img.jpg")
+        img.advantages__img(src="/img/driving-school/advantages-img.jpg")
 
-
+      include includes/admission-documents
+      include includes/license
       include includes/feedback-form
     <!-- -end MAIN -->
 
