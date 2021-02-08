@@ -636,16 +636,91 @@ template {
   background: #F7F9FA;
   padding: 60px 45px;
 }
+@media only screen and (max-width: 768px) {
+  .advantages {
+    background: #ffffff;
+    padding: 0;
+  }
+}
 .advantages__descript {
   margin-right: 45px;
+}
+@media only screen and (max-width: 768px) {
+  .advantages__descript {
+    margin-right: 0;
+  }
 }
 .advantages__descript-item {
   line-height: 26px;
   margin-bottom: 55px;
   margin-top: 0;
 }
+@media only screen and (max-width: 768px) {
+  .advantages__descript-item {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
 .advantages__descript-item:last-child {
   margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .advantages__img {
+    display: none;
+  }
+}
+
+.admission-documents {
+  margin-top: 85px !important;
+  margin-bottom: 70px;
+}
+.admission-documents__title {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 28px;
+  line-height: 46px;
+}
+@media only screen and (max-width: 768px) {
+  .admission-documents__title {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+.admission-documents__list {
+  line-height: 29px;
+  padding-left: 20px;
+  max-width: 55%;
+  color: #2F2828;
+}
+@media only screen and (max-width: 768px) {
+  .admission-documents__list {
+    font-size: 14px;
+    line-height: 26px;
+    max-width: 100%;
+  }
+}
+
+.license_wrap-bg {
+  background: #E5E5E5;
+  padding: 110px 0 110px;
+}
+@media only screen and (max-width: 768px) {
+  .license__wrap-img {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.license__img {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .license__img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .license__img:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /*Общие стили*/
