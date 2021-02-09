@@ -516,6 +516,7 @@ template {
   padding: 50px 0 110px;
   box-sizing: border-box;
   width: 100%;
+  z-index: 1;
 }
 .block-click-hamburger_wrap {
   max-width: 375px;
