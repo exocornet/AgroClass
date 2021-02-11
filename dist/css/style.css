@@ -381,6 +381,82 @@ template {
   font-weight: 800;
   font-style: normal;
 }
+/*Общие стили*/
+body {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper-width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-width {
+    max-width: 370px;
+  }
+}
+
+.title-block {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+@media only screen and (max-width: 768px) {
+  .title-block {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .title-block_display-none {
+    display: none;
+  }
+}
+
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #00923F;
+  border-radius: 6px;
+  padding: 25px 32px;
+  border: 1px solid #C5C5C5;
+  outline: none;
+  cursor: pointer;
+}
+.button_marg-banner {
+  margin-top: 60px;
+}
+.button_marg-feedform {
+  margin-top: 45px;
+}
+.button_fontsize-categori {
+  font-size: 16px;
+}
+.button:hover {
+  filter: brightness(90%);
+}
+
+@media only screen and (max-width: 768px) {
+  .br-none {
+    display: none;
+  }
+}
+
 .bread-crumbs {
   height: 345px;
   color: #ffffff;
@@ -397,15 +473,23 @@ template {
 }
 .bread-crumbs_background-driving-school {
   background: url("../img/driving-school-bg-bc.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .bread-crumbs_background-training-specequipment {
   background: url("../img/training-specequipment-bg-bc.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .bread-crumbs_background-extra-education {
   background: url("../img/extra-education-bg-bc.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .bread-crumbs_background-about-company {
   background: url("../img/about-company-bg-bc.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .bread-crumbs__link {
   font-size: 12px;
@@ -671,9 +755,52 @@ template {
   }
 }
 
+.training-specequipment-areas {
+  margin-top: 105px;
+  margin-bottom: 115px;
+}
+.training-specequipment-areas__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.training-specequipment-areas__categories-item {
+  width: 23%;
+  display: grid;
+  justify-content: center;
+  background: #ffffff;
+  gap: 32px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  padding: 0 30px 15px 30px;
+  color: #000000;
+  text-decoration: none;
+}
+.training-specequipment-areas__categories-item:hover.training-specequipment-areas__categories-item {
+  color: #00923F !important;
+}
+.training-specequipment-areas__descript {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 .admission-documents {
-  margin-top: 85px !important;
-  margin-bottom: 70px;
+  padding: 85px 0 70px 90px;
+  background: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .admission-documents {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .admission-documents_bg-color {
+    background: #ffffff;
+  }
 }
 .admission-documents__title {
   font-style: normal;
@@ -721,82 +848,6 @@ template {
   }
   .license__img:last-child {
     margin-bottom: 0;
-  }
-}
-
-/*Общие стили*/
-body {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-img {
-  max-width: 100%;
-}
-
-.wrapper-width {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 768px) {
-  .wrapper-width {
-    max-width: 370px;
-  }
-}
-
-.title-block {
-  font-style: normal;
-  font-weight: 350;
-  font-size: 30px;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-@media only screen and (max-width: 768px) {
-  .title-block {
-    font-size: 20px;
-    line-height: 32px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .title-block_display-none {
-    display: none;
-  }
-}
-
-.button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #00923F;
-  border-radius: 6px;
-  padding: 25px 32px;
-  border: 1px solid #C5C5C5;
-  outline: none;
-  cursor: pointer;
-}
-.button_marg-banner {
-  margin-top: 60px;
-}
-.button_marg-feedform {
-  margin-top: 45px;
-}
-.button_fontsize-categori {
-  font-size: 16px;
-}
-.button:hover {
-  filter: brightness(90%);
-}
-
-@media only screen and (max-width: 768px) {
-  .br-none {
-    display: none;
   }
 }
 
@@ -1003,7 +1054,7 @@ img {
 /*--end Menu education*/
 /*-end HEADER*/
 /*-start MAIN*/
-.main-index {
+.main-bgcolor {
   background: #E5E5E5;
 }
 
@@ -1012,6 +1063,7 @@ img {
   background: url("../img/home/bg-banner.jpg");
   background-size: cover;
   padding: 185px 0 230px;
+  background-position: center;
 }
 .banner__heading {
   font-style: normal;
@@ -1337,7 +1389,9 @@ img {
 
 /*---FOOTER MENU*/
 .footer-menu {
-  display: flex;
+  display: grid;
+  gap: 60px;
+  grid-auto-flow: column;
 }
 @media only screen and (max-width: 768px) {
   .footer-menu {
@@ -1348,9 +1402,6 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.footer-menu__wrap-link:first-child {
-  margin-right: 100px;
 }
 .footer-menu__wrap-link:first-child .footer-menu__link {
   margin-bottom: 26px;
@@ -1369,6 +1420,12 @@ img {
   line-height: 27px !important;
   color: #ffffff !important;
   text-decoration: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .footer-menu__link a {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
 }
 .footer-menu__link a:hover {
   color: #00923F !important;

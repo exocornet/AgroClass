@@ -1,90 +1,14 @@
 @import "normolize";
 @import "circe";
+@import "common";
 @import "bread-crumbs";
 @import "menu-gamburger";
 @import "modal-form-feedback";
 @import "pages/driving-school";
+@import "pages/training-specequipment";
 @import "admission-documents";
 @import "license";
 
-/*Общие стили*/
-body {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-img {
-  max-width: 100%;
-}
-
-.wrapper-width {
-  max-width: 1280px;
-  margin: 0 auto;
-
-  @media only screen and (max-width : 768px) {
-    max-width: 370px;
-  }
-}
-
-.title-block {
-  font-style: normal;
-  font-weight: 350;
-  font-size: 30px;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-top: 0;
-
-  @media only screen and (max-width : 768px) {
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  &_display-none {
-    @media only screen and (max-width : 768px) {
-      display: none;
-    }
-  }
-}
-
-.button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #00923F;
-  border-radius: 6px;
-  padding: 25px 32px;
-  border: 1px solid #C5C5C5;
-  outline: none;
-  cursor: pointer;
-
-  &_marg-banner {
-    margin-top: 60px;
-  }
-
-  &_marg-feedform {
-    margin-top: 45px;
-  }
-
-  &_fontsize-categori {
-    font-size: 16px;
-  }
-
-  &:hover {
-    filter: brightness(90%)
-  }
-}
-
-.br-none {
-  @media only screen and (max-width : 768px) {
-    display: none;
-  }
-}
 
 /*-start HEADER*/
 /*--start Menu*/
@@ -306,7 +230,7 @@ img {
 /*-end HEADER*/
 
 /*-start MAIN*/
-.main-index {
+.main-bgcolor {
   background: #E5E5E5;
 }
 
@@ -315,6 +239,7 @@ img {
   background: url("../img/home/bg-banner.jpg");
   background-size: cover;
   padding: 185px 0 230px;
+  background-position: center;
 
   &__heading {
     font-style: normal;
@@ -653,7 +578,9 @@ img {
 
 /*---FOOTER MENU*/
 .footer-menu {
-  display: flex;
+  display: grid;
+  gap: 60px;
+  grid-auto-flow: column;
 
   @media only screen and (max-width : 768px) {
     order: 3;
@@ -663,10 +590,6 @@ img {
     padding: 0;
     margin: 0;
     list-style: none;
-
-    &:first-child {
-      margin-right: 100px;
-    }
 
     &:first-child .footer-menu__link {
       margin-bottom: 26px;
@@ -690,6 +613,11 @@ img {
     line-height: 27px!important;
     color: #ffffff!important;
     text-decoration: none!important;
+
+    @media only screen and (max-width : 768px) {
+      font-size: 16px!important;
+      line-height: 24px!important;
+    }
 
     &:hover {
       color: #00923F!important;

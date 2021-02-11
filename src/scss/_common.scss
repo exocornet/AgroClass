@@ -1,0 +1,78 @@
+/*Общие стили*/
+body {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper-width {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media only screen and (max-width : 768px) {
+    max-width: 370px;
+  }
+}
+
+.title-block {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-top: 0;
+
+  @media only screen and (max-width : 768px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &_display-none {
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+}
+
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #00923F;
+  border-radius: 6px;
+  padding: 25px 32px;
+  border: 1px solid #C5C5C5;
+  outline: none;
+  cursor: pointer;
+
+  &_marg-banner {
+    margin-top: 60px;
+  }
+
+  &_marg-feedform {
+    margin-top: 45px;
+  }
+
+  &_fontsize-categori {
+    font-size: 16px;
+  }
+
+  &:hover {
+    filter: brightness(90%)
+  }
+}
+
+.br-none {
+  @media only screen and (max-width : 768px) {
+    display: none;
+  }
+}

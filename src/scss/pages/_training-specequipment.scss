@@ -1,0 +1,36 @@
+.training-specequipment-areas {
+  margin-top: 105px;
+  margin-bottom: 115px;
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__categories-item {
+    width: 23%;
+    display: grid;
+    justify-content: center;
+    background: #ffffff;
+    gap: 32px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 0 30px 15px 30px;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover.training-specequipment-areas__categories-item {
+      color: #00923F!important;
+    }
+  }
+
+  &__descript {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
