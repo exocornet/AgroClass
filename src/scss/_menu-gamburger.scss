@@ -69,6 +69,14 @@
 .block-click-hamburger {
   display: none;
 
+  &_margin {
+    margin-bottom: 42px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &_active {
     display: flex;
     flex-direction: column;
@@ -90,21 +98,12 @@
     padding: 0;
   }
 
-  &__link {
+  a {
     color: #ffffff;
     text-decoration: none;
-
-    &_margin {
-      margin-bottom: 42px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
 
     &:hover {
       color: #00923F;
     }
-
   }
 }

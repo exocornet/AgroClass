@@ -589,6 +589,12 @@ img {
 .block-click-hamburger {
   display: none;
 }
+.block-click-hamburger_margin {
+  margin-bottom: 42px;
+}
+.block-click-hamburger_margin:last-child {
+  margin-bottom: 0;
+}
 .block-click-hamburger_active {
   display: flex;
   flex-direction: column;
@@ -608,17 +614,11 @@ img {
   list-style: none;
   padding: 0;
 }
-.block-click-hamburger__link {
+.block-click-hamburger a {
   color: #ffffff;
   text-decoration: none;
 }
-.block-click-hamburger__link_margin {
-  margin-bottom: 42px;
-}
-.block-click-hamburger__link_margin:last-child {
-  margin-bottom: 0;
-}
-.block-click-hamburger__link:hover {
+.block-click-hamburger a:hover {
   color: #00923F;
 }
 
@@ -663,6 +663,11 @@ img {
 @media only screen and (max-width: 768px) {
   .modal__content {
     padding: 5px 5px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .modal__content {
+    padding: 0;
   }
 }
 .modal__title {
@@ -1333,7 +1338,7 @@ img {
 }
 @media only screen and (max-width: 768px) {
   .feedback-form__forma {
-    width: 370px;
+    width: 320px;
     margin: auto;
   }
 }
