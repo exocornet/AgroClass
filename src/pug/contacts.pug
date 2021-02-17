@@ -1,6 +1,7 @@
 include ../../node_modules/bempug/index
 - BEMPUG.modifier = '_';
 - var titlePage = 'Контакты';
+- var nameBreadCrumbs = 'Контакты';
 
 doctype html
 html(lang="ru")
@@ -9,10 +10,26 @@ html(lang="ru")
     include includes/header
 
     <!-- -start MAIN -->
-    main
+    main.main-bgcolor#content
+      include includes/bread-crumbs2
 
+      div.contacts-communication.wrapper-width
+        div.contacts-communication__container
+          strong г. Новоалтайск
+          span ул. Октябрьская, дом 9А, 3 этаж
+          span ул. Гагарина, дом 7
+        div.contacts-communication__container
+          strong г. Барнаул,
+          span пр. Социалистический, д 109, офис 424
+        div.contacts-communication__container
+          strong Телефон
+          a(href="tel:83853246777").contacts-communication__connection 8(38532) 46-777
+          a(href="tel:89130248111").contacts-communication__connection 8-913-024-8111
+        div.contacts-communication__container
+          strong E-mail
+          a(href="mailto:agro-klass22@yandex.ru").contacts-communication__connection agro-klass22@yandex.ru
 
-
+      iframe.map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.3500551328793!2d83.9339810688294!3d53.39067773086242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42ddae0cfe079aef%3A0x95da8d6c486217ba!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjywgOdCQLCDQndC-0LLQvtCw0LvRgtCw0LnRgdC6LCDQkNC70YLQsNC50YHQutC40Lkg0LrRgNCw0LksIDY1ODA4Nw!5e0!3m2!1sru!2sru!4v1613595655996!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
     <!-- -end MAIN -->
 
     include includes/footer

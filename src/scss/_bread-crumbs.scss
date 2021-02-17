@@ -73,3 +73,34 @@
     }
   }
 }
+
+.bread-crumbs2 {
+  padding: 65px 0;
+
+  @media only screen and (max-width : 768px) {
+    padding: 35px 0;
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 18px;
+    color: #14141B;
+    text-decoration: none;
+
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+
+    &:hover {
+      color: #00923F;
+    }
+
+    &_active {
+      text-decoration: underline;
+
+      &:hover {
+        color: #14141B;
+      }
+    }
+  }
+}
