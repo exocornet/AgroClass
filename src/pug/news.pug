@@ -1,6 +1,7 @@
 include ../../node_modules/bempug/index
 - BEMPUG.modifier = '_';
 - var titlePage = 'Новости';
+- var nameBreadCrumbs = 'Новости';
 
 doctype html
 html(lang="ru")
@@ -9,10 +10,47 @@ html(lang="ru")
     include includes/header
 
     <!-- -start MAIN -->
-    main
+    main.main-bgcolor#content
+      include includes/bread-crumbs2
 
+      div.new-prev.wrapper-width
+        div.new-prev__wrap
+          img(src="/img/new/new-prev.jpg")
+          h3.new-prev__title Обновили автопарк
+          p.new-prev__description Вчера закипили три белаза Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet sed dis malesuada tempus et sed. Sed lorem aenean ac leo sit diam. Amet tellus egestas at pharetra, condimentum diam.
+          a(href="card-news.html").new-prev__link Подробнее
 
+        div.new-prev__wrap
+          img(src="/img/new/new-prev.jpg")
+          h3.new-prev__title Обновили автопарк
+          p.new-prev__description Вчера закипили три белаза Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet sed dis malesuada tempus et sed. Sed lorem aenean ac leo sit diam. Amet tellus egestas at pharetra, condimentum diam.
+          a(href="card-news.html").new-prev__link Подробнее
 
+        div.new-prev__wrap
+          img(src="/img/new/new-prev.jpg")
+          h3.new-prev__title Обновили автопарк
+          p.new-prev__description Вчера закипили три белаза Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet sed dis malesuada tempus et sed. Sed lorem aenean ac leo sit diam. Amet tellus egestas at pharetra, condimentum diam.
+          a(href="card-news.html").new-prev__link Подробнее
+
+        div.new-prev__wrap
+          img(src="/img/new/new-prev.jpg")
+          h3.new-prev__title Обновили автопарк
+          p.new-prev__description Вчера закипили три белаза Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet sed dis malesuada tempus et sed. Sed lorem aenean ac leo sit diam. Amet tellus egestas at pharetra, condimentum diam.
+          a(href="card-news.html").new-prev__link Подробнее
+
+        div.new-prev__wrap
+          img(src="/img/new/new-prev.jpg")
+          h3.new-prev__title Обновили автопарк
+          p.new-prev__description Вчера закипили три белаза Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet sed dis malesuada tempus et sed. Sed lorem aenean ac leo sit diam. Amet tellus egestas at pharetra, condimentum diam.
+          a(href="card-news.html").new-prev__link Подробнее
+
+        div.new-prev__wrap
+          img(src="/img/new/new-prev.jpg")
+          h3.new-prev__title Обновили автопарк
+          p.new-prev__description Вчера закипили три белаза Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet sed dis malesuada tempus et sed. Sed lorem aenean ac leo sit diam. Amet tellus egestas at pharetra, condimentum diam.
+          a(href="card-news.html").new-prev__link Подробнее
+
+        a(href="#").new-prev__show-more Показать еще
     <!-- -end MAIN -->
 
     include includes/footer
