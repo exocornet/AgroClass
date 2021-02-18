@@ -857,6 +857,20 @@ img {
   height: 510px;
 }
 
+.category-desc {
+  padding-bottom: 15px;
+}
+.category-desc img {
+  width: 100%;
+}
+.category-desc__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #14141B;
+}
+
 .admission-documents {
   padding: 85px 0 70px 90px;
   background: #ffffff;
