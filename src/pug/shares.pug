@@ -1,6 +1,7 @@
 include ../../node_modules/bempug/index
 - BEMPUG.modifier = '_';
 - var titlePage = 'Акции';
+- var nameBreadCrumbs = 'Акции';
 
 doctype html
 html(lang="ru")
@@ -9,8 +10,28 @@ html(lang="ru")
     include includes/header
 
     <!-- -start MAIN -->
-    main
+    main.main-bgcolor#content
+      div.padding-bottom
+        include includes/bread-crumbs2
 
+
+        div.shares.wrapper-width
+          div.shares__wrapper
+            article.shares__wrapper-descript
+              h3.shares__title С ДРУГОМ ДЕШЕВЛЕ
+              strong.shares__subtitle Запишись с другом и получи скидку на обучение
+              p.shares__desc Mauris et mauris lorem ultricies eget mattis. Tortor cursus turpis in venenatis interdum. Condimentum diam pellentesque amet egestas nisl, sed quisque amet vitae. Aliquam netus sodales facilisi mauris tristique orci.
+
+            img(src="/img/shares/shares-img.jpg")
+
+        div.shares.wrapper-width
+          div.shares__wrapper
+            article.shares__wrapper-descript
+              h3.shares__title С ДРУГОМ ДЕШЕВЛЕ
+              strong.shares__subtitle Запишись с другом и получи скидку на обучение
+              p.shares__desc Mauris et mauris lorem ultricies eget mattis. Tortor cursus turpis in venenatis interdum. Condimentum diam pellentesque amet egestas nisl, sed quisque amet vitae. Aliquam netus sodales facilisi mauris tristique orci.
+
+            img(src="/img/shares/shares-img.jpg")
 
 
     <!-- -end MAIN -->

@@ -11,9 +11,22 @@ html(lang="ru")
     include includes/header
 
     <!-- -start MAIN -->
-    main
+    main.main-bgcolor#content
       include includes/bread-crumbs
 
+      <!-- --start Block description -->
+      div.block-desc-company.wrapper-width
+        article
+          h2.title-block Автошкола “Агро класс”
+          p.block-desc-company__desc ООО «Агро-Класс» осуществляет профессиональную подготовку и переподготовку трактористов-машинистов и квалификации рабочих профессий на основании «Лицензии на образовательную деятельность № 126 от 26 февраля 2014 г.»выданное Главным управлением образования и молодежной политики Алтайского края.
+        img.block-desc-company__img(src="/img/home/block-descript2.jpg")
+      <!-- --end Block description -->
+
+      include includes/license
+
+      include includes/our-employees
+
+      include includes/our-classes
 
       //include includes/feedback-form
     <!-- -end MAIN -->

@@ -947,6 +947,36 @@ img {
   }
 }
 
+.block-desc-company {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5%;
+  padding-top: 120px;
+}
+@media only screen and (max-width: 768px) {
+  .block-desc-company {
+    grid-template-columns: 100%;
+  }
+}
+.block-desc-company__desc {
+  font-size: 18px;
+  line-height: 28px;
+  color: #22262F;
+}
+@media only screen and (max-width: 768px) {
+  .block-desc-company__desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .block-desc-company img {
+    display: none;
+  }
+}
+
 .admission-documents {
   padding: 85px 0 70px 90px;
   background: #ffffff;
@@ -991,14 +1021,18 @@ img {
   background: #E5E5E5;
   padding: 110px 0 110px;
 }
+.license__wrap-img {
+  display: flex;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 768px) {
   .license__wrap-img {
-    display: flex;
     flex-direction: column;
   }
 }
 .license__img {
-  width: 25%;
+  width: 23%;
+  margin-right: 30px;
 }
 @media only screen and (max-width: 768px) {
   .license__img {
@@ -1008,6 +1042,69 @@ img {
   .license__img:last-child {
     margin-bottom: 0;
   }
+}
+.license__img:last-child {
+  margin-right: 0;
+}
+
+.our-employees_wrap-bg {
+  background: #E5E5E5;
+  padding: 0 0 110px;
+}
+.our-employees__wrap-img {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .our-employees__wrap-img {
+    flex-direction: column;
+  }
+}
+.our-employees__img {
+  width: 23%;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .our-employees__img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .our-employees__img:last-child {
+    margin-bottom: 0;
+  }
+}
+.our-employees__img:last-child {
+  margin-right: 0;
+}
+
+.our-classes_wrap-bg {
+  background: #E5E5E5;
+  padding: 0 0 110px;
+}
+.our-classes__wrap-img {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .our-classes__wrap-img {
+    flex-direction: column;
+  }
+}
+.our-classes__img {
+  width: 23%;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .our-classes__img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .our-classes__img:last-child {
+    margin-bottom: 0;
+  }
+}
+.our-classes__img:last-child {
+  margin-right: 0;
 }
 
 /*-start HEADER*/

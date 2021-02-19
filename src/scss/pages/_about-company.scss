@@ -1,0 +1,29 @@
+.block-desc-company {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5%;
+  padding-top: 120px;
+
+  @media only screen and (max-width : 768px) {
+    grid-template-columns: 100%;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 28px;
+    color: #22262F;
+
+    @media only screen and (max-width : 768px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  img {
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+}
