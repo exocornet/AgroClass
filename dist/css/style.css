@@ -977,6 +977,21 @@ img {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .table-wrapp-scroll {
+    overflow: scroll;
+  }
+}
+.callout {
+  margin-top: 55px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+  .callout {
+    font-size: 14px;
+  }
+}
+
 .admission-documents {
   padding: 85px 0 70px 90px;
   background: #ffffff;
@@ -1105,6 +1120,51 @@ img {
 }
 .our-classes__img:last-child {
   margin-right: 0;
+}
+
+.table {
+  border-spacing: 0 2px;
+}
+.table__tr {
+  background: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+.table__tr th {
+  text-align: left;
+  padding: 20px 0 20px 20px;
+  background: #00923F;
+  color: #ffffff;
+  border-right: none;
+}
+.table__tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+.table__tr th:last-child {
+  border-radius: 0 10px 0 0;
+}
+.table__tr td {
+  padding: 20px 0 20px 20px;
+}
+.table__tr td:first-child {
+  font-size: 16px;
+}
+.table__width-th1 {
+  width: 35%;
+}
+.table__width-th2 {
+  width: 15%;
+}
+.table__width-th3 {
+  width: 20%;
+}
+.table__width-th4 {
+  width: 15%;
+}
+.table__width-th5 {
+  width: 15%;
 }
 
 /*-start HEADER*/

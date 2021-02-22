@@ -1,0 +1,14 @@
+@media only screen and (max-width : 768px) {
+  .table-wrapp-scroll {
+    overflow: scroll;
+  }
+}
+
+.callout {
+  margin-top: 55px;
+  font-size: 18px;
+
+  @media only screen and (max-width : 768px) {
+    font-size: 14px;
+  }
+}
