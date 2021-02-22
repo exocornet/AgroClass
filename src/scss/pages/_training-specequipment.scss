@@ -59,3 +59,38 @@
     width: 100%;
   }
 }
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-115 {
+  margin-top: 115px;
+}
+
+.train-spec-advantages {
+  display: flex;
+  justify-content: space-between;
+  margin: 140px 0;
+
+  @media only screen and (max-width : 768px) {
+    width: 1100px;
+  }
+
+  &__item {
+    width: 22%;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 21px;
+    color: #3E414A;
+
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .wrapper-overflow {
+    overflow: scroll;
+  }
+}

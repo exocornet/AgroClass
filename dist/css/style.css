@@ -847,6 +847,38 @@ img {
   width: 100%;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-115 {
+  margin-top: 115px;
+}
+
+.train-spec-advantages {
+  display: flex;
+  justify-content: space-between;
+  margin: 140px 0;
+}
+@media only screen and (max-width: 768px) {
+  .train-spec-advantages {
+    width: 1100px;
+  }
+}
+.train-spec-advantages__item {
+  width: 22%;
+}
+.train-spec-advantages__desc {
+  font-size: 16px;
+  line-height: 21px;
+  color: #3E414A;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-overflow {
+    overflow: scroll;
+  }
+}
 .contacts-communication {
   display: flex;
   justify-content: space-between;
@@ -1190,6 +1222,30 @@ img {
 }
 .table__width-th5 {
   width: 15%;
+}
+
+/*Дополнения ко второй таблице*/
+.table_width100 {
+  width: 100%;
+}
+.table__tr_font-w {
+  font-weight: normal;
+}
+.table__tr_name-table {
+  text-align: left;
+  background: #00923F;
+  color: #ffffff;
+}
+.table__tr_name-table th {
+  padding: 20px 0 20px 20px;
+  text-transform: uppercase;
+}
+.table__tr_name-table th:first-child {
+  border-radius: 10px 0 0 0;
+}
+.table__tr_name-table th:last-child {
+  border-radius: 0 10px 0 0;
+  width: 20%;
 }
 
 /*-start HEADER*/
