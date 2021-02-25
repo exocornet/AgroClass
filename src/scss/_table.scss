@@ -47,6 +47,7 @@
   }
   &__width-th5 {
     width: 15%;
+    text-align: center!important;
   }
 }
 
@@ -84,4 +85,8 @@
       }
     }
   }
+}
+
+.width-50 {
+  width: 40%;
 }
