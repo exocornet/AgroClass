@@ -1319,13 +1319,17 @@ img {
 
 /*-start HEADER*/
 /*--start Menu*/
+.wrap-menu-bgcolor {
+  background: #1D1E22;
+}
+
 .menu-pages {
   background: #1D1E22;
   display: flex;
   align-items: center;
 }
 .menu-pages__links {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
