@@ -224,6 +224,7 @@
       font-size: 21px!important;
       line-height: 31px!important;
       text-decoration: none!important;
+      color: #000000;
 
       &:hover {
         color: #00923F!important;
@@ -477,7 +478,9 @@
   margin-top: 160px;
 
   &_overflow {
-    overflow: scroll;
+    @media only screen and (max-width : 768px) {
+      overflow: scroll;
+    }
   }
 
   &__img {
@@ -609,7 +612,7 @@
     }
 
     &:last-child .footer-menu__link {
-      margin-bottom: 47px;
+      margin-bottom: 54px;
 
       &:last-child {
         margin-bottom: 0;
