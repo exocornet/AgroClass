@@ -8,16 +8,21 @@
 
   &__wrap-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 
     @media only screen and (max-width : 768px) {
       flex-direction: column;
     }
   }
 
-  &__img {
-    width: 23%;
-    margin-right: 30px;
+  img {
+    width: 22%;
+    height: 365px;
+    margin-right: 35px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover;
 
     @media only screen and (max-width : 768px) {
       width: 100%;

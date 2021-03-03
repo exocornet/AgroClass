@@ -1189,27 +1189,32 @@ img {
 }
 .our-employees__wrap-img {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 768px) {
   .our-employees__wrap-img {
     flex-direction: column;
   }
 }
-.our-employees__img {
-  width: 23%;
-  margin-right: 30px;
+.our-employees img {
+  width: 22%;
+  height: 365px;
+  margin-right: 35px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 @media only screen and (max-width: 768px) {
-  .our-employees__img {
+  .our-employees img {
     width: 100%;
     margin-bottom: 100px;
   }
-  .our-employees__img:last-child {
+  .our-employees img:last-child {
     margin-bottom: 0;
   }
 }
-.our-employees__img:last-child {
+.our-employees img:last-child {
   margin-right: 0;
 }
 
