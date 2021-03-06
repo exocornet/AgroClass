@@ -1166,20 +1166,23 @@ img {
     flex-direction: column;
   }
 }
-.license__img {
+.license img {
   width: 23%;
   margin-right: 30px;
+  height: 365px;
+  object-fit: contain;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 768px) {
-  .license__img {
+  .license img {
     width: 100%;
     margin-bottom: 100px;
   }
-  .license__img:last-child {
+  .license img:last-child {
     margin-bottom: 0;
   }
 }
-.license__img:last-child {
+.license img:last-child {
   margin-right: 0;
 }
 
@@ -1793,6 +1796,11 @@ img {
   background: url("../img/feedback-form-bg.jpg") no-repeat;
   background-size: cover;
   height: 570px;
+}
+@media only screen and (min-width: 1600px) {
+  .feedback-form_background {
+    height: 845px;
+  }
 }
 .feedback-form_width {
   max-width: 1280px;
