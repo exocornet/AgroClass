@@ -1335,6 +1335,7 @@ img {
   background: #1D1E22;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .menu-pages__links {
   margin: 0;
